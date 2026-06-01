@@ -28,15 +28,16 @@ class AlmoxarifadoPanelProvider extends PanelProvider
             ->id('almoxarifado')
             ->path('almoxarifado')
             ->login()
+            ->brandname('Meu Almoxarifado')
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Pink,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
+            ->discoverResources(in: app_path('Filament/Almoxarifado/Resources'), for: 'App\Filament\Almoxarifado\Resources')
+            ->discoverPages(in: app_path('Filament/Almoxarifado/Pages'), for: 'App\Filament\Almoxarifado\Pages')
             ->pages([
                 Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
+            ->discoverWidgets(in: app_path('Filament/Almoxarifado/Widgets'), for: 'App\Filament\Almoxarifado\Widgets')
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,
