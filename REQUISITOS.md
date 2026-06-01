@@ -39,5 +39,3 @@ Cadastrar o produto com os seguintes atributos:
 ### [RF02]
 
 ### Regras de Negócio
-
-- 
