@@ -29,6 +29,7 @@ class AlmoxarifadoPanelProvider extends PanelProvider
             ->path('almoxarifado')
             ->login()
             ->brandname('Meu Almoxarifado')
+            
             ->colors([
                 'primary' => Color::Pink,
             ])
