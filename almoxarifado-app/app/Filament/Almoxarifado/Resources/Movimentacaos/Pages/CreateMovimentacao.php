@@ -29,7 +29,7 @@ class CreateMovimentacao extends CreateRecord
     /**
      * O que a função afterCreate faz? 
      * 
-     * 
+     * @param $movimento recebe os dados da lista de produtos 
      */
     
 
