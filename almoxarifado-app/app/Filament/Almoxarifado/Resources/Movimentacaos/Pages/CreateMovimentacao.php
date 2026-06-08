@@ -12,6 +12,27 @@ class CreateMovimentacao extends CreateRecord
 {
     protected static string $resource = MovimentacaoResource::class;
 
+    /**
+     * O que a função beforeCreate faz?
+     * 
+     * @param $data recebe os dados do produto
+     * @param $produto recebe uma lista com os dados dos produtos pelo id
+     * @param $quantidade recebe os dados de $data pela quantidade
+     * @param $tipo recebe os dados de $data pelo tipo
+     * 
+     * definição de uma condicional if:
+     * @param $tipo for === 's' e $quantidade for > o estoque da lista de produtos:
+     *        uma Notificação de erro indicando o problema nessa criação é exibida na tela
+     *        um halt impede a criação do movimento de saída
+    */
+    
+    /**
+     * O que a função afterCreate faz? 
+     * 
+     * 
+     */
+    
+
     protected function beforeCreate(): void {
         // Recebe a lista de produtos
         $data = $this->data;
